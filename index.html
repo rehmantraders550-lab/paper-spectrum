@@ -3,27 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Paper Spectrum — Editorial System Prototype</title>
-  <meta name="description" content="An editorial web system and design prototype exploring proportion, rhythm, hierarchy, and paper materiality.">
-  <meta property="og:title" content="Paper Spectrum — Editorial System Prototype">
-  <meta property="og:description" content="An editorial web system and design prototype exploring proportion, rhythm, hierarchy, and paper materiality.">
+  <title>Paper Spectrum — Editorial Web System</title>
+  <meta name="description" content="An editorial web system exploring proportion, rhythm, hierarchy, and paper materiality across a sequence of printed-inspired spreads.">
+  <meta property="og:title" content="Paper Spectrum — Editorial Web System">
+  <meta property="og:description" content="An editorial web system exploring proportion, rhythm, hierarchy, and paper materiality across a sequence of printed-inspired spreads.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:opsz,wght@6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/tokens.css">
   <link rel="stylesheet" href="./src/layout.css">
   <link rel="stylesheet" href="./src/motion.css">
 </head>
 <body>
+
+<!-- 1. Masthead -->
 <header class="ps-shell masthead">
   <a class="brand" href="#">Paper Spectrum</a>
   <button class="ps-menu-toggle" data-ps-disclosure aria-controls="ps-nav" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
   <nav id="ps-nav" class="nav" aria-label="Primary" hidden>
-    <a href="#studies">Studies</a><a href="#material">Material</a><a href="#index">Index</a><a href="#about">About</a>
+    <a href="#studies">Studies</a>
+    <a href="#projects">Projects</a>
+    <a href="#register">Register</a>
+    <a href="#reading">Reading</a>
+    <a href="#archive">Archive</a>
+    <a href="#dispatch">Dispatch</a>
   </nav>
 </header>
 
 <main>
+  <!-- 2. Editorial Cover / Hero -->
   <section class="ps-shell hero ps-section--major" data-ps-reveal>
     <div class="hero__inner">
       <p class="ps-kicker">An editorial study of matter and form</p>
@@ -32,68 +40,300 @@
     </div>
   </section>
 
+  <!-- 3. Editorial Statement -->
+  <section class="ps-shell ps-section ps-rule">
+    <div class="ps-reading ps-stack--group" data-ps-reveal>
+      <p class="ps-kicker">Prologue / Perspective</p>
+      <p class="ps-lead">We treat the browser not as a continuous feed of transient widgets, but as a deliberate sequence of physical spreads. Here, proportion, rhythm, and empty space carry genuine editorial meaning.</p>
+    </div>
+  </section>
+
+  <!-- 4. Asymmetric Feature Split (5/7) -->
   <section id="studies" class="ps-shell ps-section--major">
     <div class="ps-grid ps-split-5-7">
       <div class="ps-stack--group" data-ps-reveal>
         <p class="ps-kicker">01 / Field Study</p>
         <h2 class="ps-feature">Quiet geometry.</h2>
-        <p class="ps-lead">A restrained system of proportion, rhythm and material evidence.</p>
+        <p class="ps-lead">A restrained system of proportion, rhythm, and material evidence.</p>
+        <p class="ps-copy">Every element is anchored to a dual-shell 1400px outer frame and 1280px working grid. Motion never leads; it merely clarifies state change before settling back into stillness.</p>
+        <a class="ps-link" href="#projects">Review the specimens</a>
       </div>
-      <div class="paper-object" data-ps-image-feedback data-ps-reveal aria-label="Abstract paper study placeholder"></div>
+      <div class="paper-object" data-ps-image-feedback data-ps-reveal aria-label="Material paper study plate PS-001">
+        <svg viewBox="0 0 520 650" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="display:block;">
+          <rect width="100%" height="100%" fill="var(--ps-spectrum-wash)"/>
+          <line x1="40" y1="40" x2="480" y2="40" stroke="var(--ps-rule)" stroke-width="1"/>
+          <line x1="40" y1="610" x2="480" y2="610" stroke="var(--ps-rule)" stroke-width="1"/>
+          <line x1="40" y1="40" x2="40" y2="610" stroke="var(--ps-rule)" stroke-width="1"/>
+          <line x1="480" y1="40" x2="480" y2="610" stroke="var(--ps-rule)" stroke-width="1"/>
+          <rect x="80" y="100" width="360" height="420" fill="var(--ps-paper-mist)" opacity="0.65"/>
+          <circle cx="260" cy="310" r="110" fill="var(--ps-paper)" opacity="0.9"/>
+          <line x1="260" y1="180" x2="260" y2="440" stroke="var(--ps-rule-strong)" stroke-width="1" stroke-dasharray="2 4"/>
+          <line x1="130" y1="310" x2="390" y2="310" stroke="var(--ps-rule-strong)" stroke-width="1" stroke-dasharray="2 4"/>
+          <text x="96" y="500" font-family="Inter, sans-serif" font-size="11" letter-spacing="0.08em" fill="var(--ps-ink-soft)">REF. 01-DECKLE-A4 / 220 GSM</text>
+        </svg>
+      </div>
     </div>
   </section>
 
-  <section class="ps-section--pause ps-section--wash">
-    <div class="ps-shell">
-      <div class="ps-grid ps-split-7-5">
-        <div data-ps-reveal><h2 class="ps-feature">A pause can carry as much information as a paragraph.</h2></div>
-        <div class="ps-reading ps-stack" data-ps-reveal>
-          <p class="ps-copy">Paper Spectrum uses empty space, rules and tonal passages as structural tools. Motion remains quiet enough that the composition still works when every animation is removed.</p>
-          <a class="ps-link" href="#index">Read the register</a>
+  <!-- 5. Article / Project Grid (4 columns) -->
+  <section id="projects" class="ps-shell ps-section--major ps-rule">
+    <div class="ps-stack--large">
+      <div class="ps-split-4-8 ps-grid" data-ps-reveal>
+        <p class="ps-kicker">02 / Project Specimens</p>
+        <h2 class="ps-heading">Physical properties recorded across four distinct paper disciplines.</h2>
+      </div>
+      <div class="ps-article-grid">
+        <article class="ps-card" data-ps-reveal>
+          <div class="ps-card__media" data-ps-image-feedback>
+            <svg viewBox="0 0 320 400" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="display:block;">
+              <rect width="100%" height="100%" fill="var(--ps-paper-mist)"/>
+              <rect x="30" y="30" width="260" height="340" fill="var(--ps-white)" opacity="0.8"/>
+              <line x1="60" y1="80" x2="260" y2="80" stroke="var(--ps-rule)" stroke-width="1"/>
+              <line x1="60" y1="120" x2="220" y2="120" stroke="var(--ps-rule)" stroke-width="1"/>
+              <circle cx="160" cy="240" r="50" fill="var(--ps-spectrum-wash)"/>
+            </svg>
+          </div>
+          <div class="ps-card__body">
+            <p class="ps-card__meta">Specimen 01 · Surface</p>
+            <h3 class="ps-card__title">Tactile Grain & Formation</h3>
+            <p class="ps-card__deck">Long cotton fibers and unpressed felt textures that scatter ambient gallery light.</p>
+          </div>
+        </article>
+
+        <article class="ps-card" data-ps-reveal>
+          <div class="ps-card__media" data-ps-image-feedback>
+            <svg viewBox="0 0 320 400" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="display:block;">
+              <rect width="100%" height="100%" fill="var(--ps-spectrum-wash)"/>
+              <rect x="40" y="50" width="240" height="300" fill="var(--ps-paper)"/>
+              <line x1="40" y1="200" x2="280" y2="200" stroke="var(--ps-ink)" stroke-width="1"/>
+              <rect x="60" y="70" width="100" height="110" fill="var(--ps-paper-mist)"/>
+            </svg>
+          </div>
+          <div class="ps-card__body">
+            <p class="ps-card__meta">Specimen 02 · Tone</p>
+            <h3 class="ps-card__title">Chromatic Absorption</h3>
+            <p class="ps-card__deck">Calibrated warmth of unbleached pulp interacting with natural pigments.</p>
+          </div>
+        </article>
+
+        <article class="ps-card" data-ps-reveal>
+          <div class="ps-card__media" data-ps-image-feedback>
+            <svg viewBox="0 0 320 400" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="display:block;">
+              <rect width="100%" height="100%" fill="var(--ps-paper-mist)"/>
+              <polygon points="40,360 160,40 280,360" fill="var(--ps-paper)" opacity="0.9"/>
+              <line x1="160" y1="40" x2="160" y2="360" stroke="var(--ps-rule-strong)" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="ps-card__body">
+            <p class="ps-card__meta">Specimen 03 · Mechanics</p>
+            <h3 class="ps-card__title">Tensile Folding Resistance</h3>
+            <p class="ps-card__deck">Grain orientation, spine endurance, and structural score lines for archival binding.</p>
+          </div>
+        </article>
+
+        <article class="ps-card" data-ps-reveal>
+          <div class="ps-card__media" data-ps-image-feedback>
+            <svg viewBox="0 0 320 400" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="display:block;">
+              <rect width="100%" height="100%" fill="var(--ps-spectrum-wash)"/>
+              <rect x="30" y="30" width="260" height="340" fill="var(--ps-paper)"/>
+              <circle cx="160" cy="180" r="70" fill="var(--ps-ink)" opacity="0.85"/>
+              <circle cx="160" cy="180" r="35" fill="var(--ps-paper)"/>
+            </svg>
+          </div>
+          <div class="ps-card__body">
+            <p class="ps-card__meta">Specimen 04 · Impression</p>
+            <h3 class="ps-card__title">Density & Relief Acuity</h3>
+            <p class="ps-card__deck">Microscopic ink trapping and crisp letterpress depth without fiber bruising.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Indexed Register -->
+  <section id="register" class="ps-shell ps-section--major">
+    <div class="ps-grid ps-split-4-8">
+      <div class="ps-stack" data-ps-reveal>
+        <p class="ps-kicker">03 / Indexed Register</p>
+        <h2 class="ps-heading">Material inventory</h2>
+        <p class="ps-copy">A continuous structural log detailing physical thresholds, calipers, and optical properties.</p>
+      </div>
+      <div class="register" data-ps-reveal>
+        <div class="register__row">
+          <span>01</span>
+          <strong>Surface Texture</strong>
+          <p>Grain direction, wire formation, tooth tooth-depth, and matte diffusion under 5000K daylight.</p>
+        </div>
+        <div class="register__row">
+          <span>02</span>
+          <strong>Caliper & Bulk</strong>
+          <p>Substance ranges from 90 gsm lightweight editorial text up to 350 gsm rigid duplex board.</p>
+        </div>
+        <div class="register__row">
+          <span>03</span>
+          <strong>Ink Interaction</strong>
+          <p>Penetration rate, dot gain calibration, and pigment density across lithographic and letterpress impressions.</p>
+        </div>
+        <div class="register__row">
+          <span>04</span>
+          <strong>Assembly & Score</strong>
+          <p>Folding endurance, grain alignment with bindery spine, and stitch integrity over multi-decade cycles.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="material" class="visual-field" data-ps-reveal>
+  <!-- 7. Spectrum Wash Tonal Passage -->
+  <section class="ps-section--pause ps-section--wash">
+    <div class="ps-shell">
+      <div class="ps-grid ps-split-7-5">
+        <div data-ps-reveal>
+          <h2 class="ps-feature">A pause can carry as much information as a paragraph.</h2>
+        </div>
+        <div class="ps-reading ps-stack" data-ps-reveal>
+          <p class="ps-copy">Paper Spectrum uses empty space, hairline rules, and tonal transitions as active structural instruments. The muted Spectrum Wash field interrupts visual habit without introducing aggressive saturation.</p>
+          <a class="ps-link" href="#reading">Proceed to the reading</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Long-Form Editorial Feature -->
+  <section id="reading" class="ps-shell ps-section--major">
+    <article class="ps-reading ps-stack--group" data-ps-reveal>
+      <header class="ps-stack">
+        <p class="ps-kicker">04 / Long-Form Reading</p>
+        <h2 class="ps-feature">The Architecture of Stillness</h2>
+        <p class="ps-lead">When reading printed matter, white space is not an emptiness waiting to be filled. It is the architectural boundary that allows typography to breathe and thoughts to take shape.</p>
+      </header>
+
+      <div class="ps-stack">
+        <p class="ps-copy">Digital surfaces often treat area as real estate to be populated with notifications, sticky bars, and animated interruptions. In contrast, paper has spent centuries refining the relationship between margin and measure. A wide margin protects the inner text from thumb placement while establishing a psychological threshold of focus.</p>
+        
+        <p class="ps-copy">By translating these disciplines to the browser, we retain fixed proportions without mimicking skeumorphic surfaces. The 1400px outer editorial frame and 1280px working grid establish an uncompromised horizon. Reading measure never exceeds 680px, guaranteeing that line length stays within the optimal 7–12 words per line.</p>
+      </div>
+
+      <div class="ps-stack ps-rule" style="padding-top: var(--ps-space-group);">
+        <blockquote class="ps-pullquote" style="font-style: italic;">
+          "Good editorial design does not ask for attention. It prepares the reader to give attention freely."
+        </blockquote>
+      </div>
+
+      <div class="ps-stack">
+        <p class="ps-copy">Motion within this system is intentionally subdued. At a maximum displacement of 8 pixels and durations grounded in natural cadence (220ms, 400ms, 800ms), transitions merely state what has changed. If every animation is disabled through preferences or script failures, the page remains completely legible, coherent, and graceful.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- 9. Full-Bleed Image Passage -->
+  <section class="visual-field" data-ps-reveal>
     <div class="ps-shell">
       <div class="ps-stack--group">
-        <p class="ps-kicker">02 / Image Passage</p>
+        <p class="ps-kicker">05 / Visual Passage</p>
         <h2 class="ps-feature">One image. One chapter.</h2>
-        <p class="ps-lead">Full-bleed moments are rare enough to remain consequential.</p>
+        <p class="ps-lead">Full-bleed moments are rare enough to remain consequential, resetting the eye before the subsequent chapter begins.</p>
       </div>
     </div>
   </section>
 
-  <section id="index" class="ps-shell ps-section--major">
-    <div class="ps-grid ps-split-4-8">
-      <div class="ps-stack" data-ps-reveal>
-        <p class="ps-kicker">03 / Index</p>
-        <h2 class="ps-heading">Material register</h2>
-      </div>
-      <div class="register" data-ps-reveal>
-        <div class="register__row"><span>01</span><strong>Surface</strong><p>Grain, formation and reflected light.</p></div>
-        <div class="register__row"><span>02</span><strong>Weight</strong><p>Thickness, stiffness and physical presence.</p></div>
-        <div class="register__row"><span>03</span><strong>Print</strong><p>Ink interaction, edge and density.</p></div>
-        <div class="register__row"><span>04</span><strong>Structure</strong><p>Fold, cut, bind and assembly.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="ps-shell ps-section--monumental" data-ps-reveal>
-    <div class="ps-reading ps-stack--group">
-      <p class="ps-kicker">04 / Closing note</p>
+  <!-- 10. Curatorial Pause -->
+  <section class="ps-shell ps-section--monumental" data-ps-reveal>
+    <div class="ps-reading ps-stack--group" style="text-align: center; margin-inline: auto;">
+      <p class="ps-kicker">Curatorial Pause</p>
       <h2 class="ps-feature">Designed to read slowly.</h2>
-      <p class="ps-lead">Paper Spectrum treats the web as a sequence of editorial spreads rather than a stack of interface components.</p>
+      <p class="ps-lead">A momentary suspension of visual density, giving space to absorb what preceded before moving into fabrication.</p>
+    </div>
+  </section>
+
+  <!-- 11. Secondary Editorial/Project Sequence (8/4 Split) -->
+  <section id="archive" class="ps-shell ps-section--major ps-rule">
+    <div class="ps-grid ps-split-8-4">
+      <div class="ps-stack--group" data-ps-reveal>
+        <p class="ps-kicker">06 / Fabrication Archive</p>
+        <h2 class="ps-heading">Archival permanence versus ephemeral touch</h2>
+        <p class="ps-lead">A comparative inquiry into acid-free cotton rag formulations and plant-derived binding adhesives.</p>
+        <div class="ps-grid ps-split-6-6" style="margin-top: var(--ps-space-group);">
+          <div class="ps-stack">
+            <strong style="font-weight: 500; font-family: var(--ps-sans); font-size: var(--ps-text-caption); letter-spacing: var(--ps-tracking-caption); text-transform: uppercase;">Cotton Rag / Acid Free</strong>
+            <p class="ps-copy">Neutral pH buffers guarantee 300+ year storage stability without yellowing or fiber embrittlement.</p>
+          </div>
+          <div class="ps-stack">
+            <strong style="font-weight: 500; font-family: var(--ps-sans); font-size: var(--ps-text-caption); letter-spacing: var(--ps-tracking-caption); text-transform: uppercase;">Kozo / Handmade</strong>
+            <p class="ps-copy">Mulberry bark hand-sheeted in cold stream water, retaining unrivaled tensile strength and translucent softness.</p>
+          </div>
+        </div>
+      </div>
+      <div class="paper-object" data-ps-image-feedback data-ps-reveal aria-label="Archive fabrication plate">
+        <svg viewBox="0 0 400 500" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="display:block;">
+          <rect width="100%" height="100%" fill="var(--ps-paper-mist)"/>
+          <line x1="30" y1="30" x2="370" y2="470" stroke="var(--ps-rule)" stroke-width="1"/>
+          <line x1="370" y1="30" x2="30" y2="470" stroke="var(--ps-rule)" stroke-width="1"/>
+          <circle cx="200" cy="250" r="100" fill="var(--ps-paper)" stroke="var(--ps-rule-strong)" stroke-width="1"/>
+          <text x="50" y="440" font-family="Inter, sans-serif" font-size="11" letter-spacing="0.08em" fill="var(--ps-ink-soft)">PLATE 06 · STACK ARCHIVE</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Minimal Newsletter / Contact Register -->
+  <section id="dispatch" class="ps-shell ps-section--major">
+    <div class="ps-grid ps-split-5-7">
+      <div class="ps-stack" data-ps-reveal>
+        <p class="ps-kicker">07 / Dispatch Register</p>
+        <h2 class="ps-heading">Seasonal publication index</h2>
+        <p class="ps-copy">Receive quiet quarterly dispatches documenting material explorations, paper specimens, and typography research.</p>
+      </div>
+      <div data-ps-reveal>
+        <form class="ps-newsletter" data-ps-newsletter novalidate>
+          <div class="ps-newsletter__field">
+            <label class="ps-newsletter__label" for="ps-dispatch-email">Email Address</label>
+            <input class="ps-newsletter__input" id="ps-dispatch-email" type="email" placeholder="reader@publication.org" required>
+          </div>
+          <button class="ps-newsletter__button" type="submit">Subscribe</button>
+          <div class="ps-newsletter__status" role="status" aria-live="polite" style="width: 100%;"></div>
+        </form>
+      </div>
     </div>
   </section>
 </main>
 
+<!-- 13. Footer Register -->
 <footer class="footer">
-  <div class="ps-shell ps-folio">
-    <span>Paper Spectrum</span><span>Editorial Web System / v1.0</span>
+  <div class="ps-shell">
+    <div class="footer__directory">
+      <div class="footer__col">
+        <p class="footer__col-title">Paper Spectrum</p>
+        <p class="footer__desc">An editorial design and engineering system translating the proportion, discipline, and materiality of print into open web architectures.</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Sections</p>
+        <a class="footer__link" href="#studies">Field Studies</a>
+        <a class="footer__link" href="#projects">Specimens</a>
+        <a class="footer__link" href="#register">Material Index</a>
+        <a class="footer__link" href="#reading">Long-Form Reading</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Archive</p>
+        <a class="footer__link" href="#archive">Fabrication Log</a>
+        <a class="footer__link" href="#dispatch">Seasonal Dispatch</a>
+        <a class="footer__link" href="#">Colophon</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">System</p>
+        <a class="footer__link" href="#">Newsreader (Serif)</a>
+        <a class="footer__link" href="#">Inter (Sans)</a>
+        <a class="footer__link" href="#">Dual-Shell Geometry</a>
+      </div>
+    </div>
+
+    <div class="ps-folio">
+      <span>Paper Spectrum · Editorial Web System</span>
+      <span class="ps-credit">Powered by <strong class="ps-credit__brand">ORVIA</strong></span>
+      <span>Newsreader &amp; Inter · v1.0</span>
+    </div>
   </div>
 </footer>
+
 <script src="./src/behavior.js"></script>
 </body>
 </html>

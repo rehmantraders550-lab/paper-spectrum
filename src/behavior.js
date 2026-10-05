@@ -40,4 +40,19 @@
       if (event.key === 'Escape') setOpen(false);
     });
   });
+
+  const newsletterForm = document.querySelector('[data-ps-newsletter]');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const status = newsletterForm.querySelector('.ps-newsletter__status');
+      const input = newsletterForm.querySelector('.ps-newsletter__input');
+      if (input && input.value && input.checkValidity()) {
+        if (status) status.textContent = 'Registered into the seasonal index.';
+        input.value = '';
+      } else if (input) {
+        if (status) status.textContent = 'Please provide a valid dispatch address.';
+      }
+    });
+  }
 })();
