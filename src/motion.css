@@ -1,0 +1,53 @@
+/* Content remains visible without JS. JS adds .ps-motion-ready before reveal states apply. */
+.ps-motion-ready [data-ps-reveal] {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity var(--ps-motion-medium) var(--ps-ease),
+    transform var(--ps-motion-medium) var(--ps-ease);
+}
+
+.ps-motion-ready [data-ps-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-ps-image-feedback] {
+  overflow: hidden;
+}
+
+[data-ps-image-feedback] img {
+  transform: scale(1);
+  transition:
+    transform var(--ps-motion-small) var(--ps-ease),
+    opacity var(--ps-motion-small) var(--ps-ease);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  [data-ps-image-feedback]:hover img {
+    transform: scale(1.01);
+  }
+}
+
+.ps-link {
+  transition:
+    opacity var(--ps-motion-micro) var(--ps-ease),
+    border-color var(--ps-motion-micro) var(--ps-ease);
+}
+
+.ps-link:hover { opacity: .62; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .ps-motion-ready [data-ps-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+  [data-ps-image-feedback] img { transform: none !important; }
+}

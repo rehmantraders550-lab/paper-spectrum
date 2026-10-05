@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paper Spectrum — Editorial System Prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:opsz,wght@6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/tokens.css">
+  <link rel="stylesheet" href="../src/layout.css">
+  <link rel="stylesheet" href="../src/motion.css">
+  <style>
+    .masthead { min-height: 64px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--ps-rule); }
+    .brand { font-family:var(--ps-serif); font-size:20px; text-decoration:none; }
+    .nav { display:flex; gap:24px; font-size:13px; letter-spacing:.06em; text-transform:uppercase; }
+    .nav a { text-decoration:none; }
+    .hero { min-height:72svh; display:grid; place-items:center; text-align:center; }
+    .hero__inner { max-width:900px; }
+    .hero__inner > * + * { margin-top:24px; }
+    .paper-object { width:min(100%, 520px); aspect-ratio:4/5; background:var(--ps-spectrum-wash); margin-inline:auto; position:relative; }
+    .paper-object::before { content:"PS / 001"; position:absolute; top:20px; left:20px; font:400 13px/1.2 var(--ps-sans); letter-spacing:.06em; }
+    .paper-object::after { content:"PAPER SPECTRUM"; position:absolute; bottom:20px; right:20px; writing-mode:vertical-rl; font:400 13px/1.2 var(--ps-sans); letter-spacing:.06em; }
+    .visual-field { min-height:72svh; background:var(--ps-ink); color:white; display:grid; align-items:end; padding:var(--ps-gutter); }
+    .visual-field p { max-width:520px; }
+    .register { border-top:1px solid var(--ps-rule); }
+    .register__row { display:grid; grid-template-columns:70px 1fr minmax(160px, 360px); gap:20px; padding:20px 0; border-bottom:1px solid var(--ps-rule); }
+    .footer { background:var(--ps-ink); color:white; padding-block:60px; }
+    @media(max-width:767px){ .nav{display:none}.hero{min-height:68svh}.register__row{grid-template-columns:40px 1fr}.register__row p{grid-column:2}.visual-field{min-height:60svh} }
+  </style>
+</head>
+<body>
+<header class="ps-shell masthead">
+  <a class="brand" href="#">Paper Spectrum</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="#studies">Studies</a><a href="#material">Material</a><a href="#index">Index</a><a href="#about">About</a>
+  </nav>
+</header>
+
+<main>
+  <section class="ps-shell hero ps-section--major" data-ps-reveal>
+    <div class="hero__inner">
+      <p class="ps-kicker">An editorial study of matter and form</p>
+      <h1 class="ps-display">Paper is not a background. It is the beginning of the composition.</h1>
+      <a class="ps-link" href="#studies">Enter the index</a>
+    </div>
+  </section>
+
+  <section id="studies" class="ps-shell ps-section--major">
+    <div class="ps-grid ps-split-5-7">
+      <div class="ps-stack--group" data-ps-reveal>
+        <p class="ps-kicker">01 / Field Study</p>
+        <h2 class="ps-feature">Quiet geometry.</h2>
+        <p class="ps-lead">A restrained system of proportion, rhythm and material evidence.</p>
+      </div>
+      <div class="paper-object" data-ps-image-feedback data-ps-reveal aria-label="Abstract paper study placeholder"></div>
+    </div>
+  </section>
+
+  <section class="ps-section--pause ps-section--wash">
+    <div class="ps-shell ps-grid ps-split-7-5">
+      <div data-ps-reveal><h2 class="ps-feature">A pause can carry as much information as a paragraph.</h2></div>
+      <div class="ps-reading ps-stack" data-ps-reveal>
+        <p class="ps-copy">Paper Spectrum uses empty space, rules and tonal passages as structural tools. Motion remains quiet enough that the composition still works when every animation is removed.</p>
+        <a class="ps-link" href="#index">Read the register</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="visual-field" data-ps-reveal>
+    <div>
+      <p class="ps-kicker">02 / Image Passage</p>
+      <h2 class="ps-feature">One image. One chapter.</h2>
+      <p class="ps-lead">Full-bleed moments are rare enough to remain consequential.</p>
+    </div>
+  </section>
+
+  <section id="index" class="ps-shell ps-section--major">
+    <div class="ps-grid ps-split-4-8">
+      <div class="ps-stack" data-ps-reveal>
+        <p class="ps-kicker">03 / Index</p>
+        <h2 class="ps-heading">Material register</h2>
+      </div>
+      <div class="register" data-ps-reveal>
+        <div class="register__row"><span>01</span><strong>Surface</strong><p>Grain, formation and reflected light.</p></div>
+        <div class="register__row"><span>02</span><strong>Weight</strong><p>Thickness, stiffness and physical presence.</p></div>
+        <div class="register__row"><span>03</span><strong>Print</strong><p>Ink interaction, edge and density.</p></div>
+        <div class="register__row"><span>04</span><strong>Structure</strong><p>Fold, cut, bind and assembly.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ps-shell ps-section--monumental" data-ps-reveal>
+    <div class="ps-reading ps-stack--group">
+      <p class="ps-kicker">04 / Closing note</p>
+      <h2 class="ps-feature">Designed to read slowly.</h2>
+      <p class="ps-lead">Paper Spectrum treats the web as a sequence of editorial spreads rather than a stack of interface components.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="ps-shell ps-folio">
+    <span>Paper Spectrum</span><span>Editorial Web System / v1.0</span>
+  </div>
+</footer>
+<script src="../src/behavior.js"></script>
+</body>
+</html>

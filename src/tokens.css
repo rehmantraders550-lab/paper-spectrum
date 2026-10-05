@@ -1,0 +1,85 @@
+:root {
+  /* Paper Spectrum identity */
+  --ps-paper: #F7F5F0;
+  --ps-white: #FFFFFF;
+  --ps-ink: #151514;
+  --ps-ink-soft: #3A3A37;
+  --ps-paper-mist: #ECE9E2;
+  --ps-spectrum-wash: #D9DEE0;
+  --ps-rule: rgba(21, 21, 20, 0.24);
+  --ps-rule-strong: rgba(21, 21, 20, 0.72);
+
+  /* Typography */
+  --ps-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --ps-sans: "Inter", Arial, sans-serif;
+  --ps-weight: 400;
+
+  --ps-text-caption: 13px;
+  --ps-leading-caption: 1.2;
+  --ps-tracking-caption: 0.06em;
+
+  --ps-text-body: 15px;
+  --ps-leading-body: 1.5;
+
+  --ps-text-lead: 20px;
+  --ps-leading-lead: 1.33;
+
+  --ps-text-heading-sm: 25px;
+  --ps-leading-heading-sm: 1.19;
+  --ps-tracking-heading-sm: 0.01em;
+
+  --ps-text-heading: 32px;
+  --ps-leading-heading: 1.16;
+  --ps-tracking-heading: -0.01em;
+
+  --ps-text-feature: 50px;
+  --ps-leading-feature: 1.04;
+  --ps-tracking-feature: -0.01em;
+
+  --ps-text-display: clamp(42px, 4.2vw, 60px);
+  --ps-leading-display: 1;
+  --ps-tracking-display: -0.025em;
+
+  /* Spacing */
+  --ps-space-4: 4px;
+  --ps-space-8: 8px;
+  --ps-space-12: 12px;
+  --ps-space-20: 20px;
+  --ps-space-24: 24px;
+  --ps-space-40: 40px;
+  --ps-space-60: 60px;
+  --ps-space-80: 80px;
+  --ps-space-120: 120px;
+  --ps-space-170: 170px;
+  --ps-space-200: 200px;
+
+  /* Semantic spacing */
+  --ps-space-micro: var(--ps-space-8);
+  --ps-space-element: var(--ps-space-20);
+  --ps-space-group: var(--ps-space-40);
+  --ps-space-section: var(--ps-space-80);
+  --ps-space-major: var(--ps-space-120);
+  --ps-space-pause: var(--ps-space-170);
+  --ps-space-monumental: var(--ps-space-200);
+
+  /* Geometry */
+  --ps-page-max: 1400px;
+  --ps-grid-max: 1280px;
+  --ps-reading-max: 680px;
+  --ps-deck-max: 760px;
+  --ps-gutter: clamp(24px, 4vw, 60px);
+  --ps-grid-gap: 20px;
+  --ps-rule-width: 1px;
+
+  /* Motion */
+  --ps-motion-micro: 220ms;
+  --ps-motion-small: 400ms;
+  --ps-motion-medium: 800ms;
+  --ps-ease: cubic-bezier(0.25, 1, 0.5, 1);
+
+  /* Shape */
+  --ps-radius-card: 0px;
+  --ps-radius-image: 0px;
+  --ps-radius-control: 0px;
+  --ps-radius-inline: 2px;
+}

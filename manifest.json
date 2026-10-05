@@ -1,0 +1,19 @@
+{
+  "name": "paper-spectrum-editorial-web-system",
+  "version": "1.0.0",
+  "entry": "DESIGN.md",
+  "files": [
+    "README.md",
+    "DESIGN.md",
+    "src/tokens.css",
+    "src/layout.css",
+    "src/motion.css",
+    "src/behavior.js",
+    "src/parameters.json",
+    "docs/component-specs.md",
+    "docs/responsive-matrix.md",
+    "docs/qa-checklist.md",
+    "docs/provenance.md",
+    "prototype/index.html"
+  ]
+}

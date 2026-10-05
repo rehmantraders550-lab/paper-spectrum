@@ -1,0 +1,57 @@
+{
+  "system": "Paper Spectrum Editorial Web System",
+  "version": "1.0.0",
+  "reference_model": "Kinfolk editorial web grammar",
+  "policy": "Migrate proportion, rhythm and interaction discipline; do not copy brand assets, copy or proprietary fonts.",
+  "geometry": {
+    "outer_frame_max_px": {"value": 1400, "confidence": 0.80, "origin": "independent extraction / Paper Spectrum dual-shell resolution"},
+    "working_grid_max_px": {"value": 1280, "confidence": 0.95, "origin": "computed-style extraction"},
+    "desktop_columns": {"value": 12, "confidence": 0.95, "origin": "computed-style extraction"},
+    "grid_gutter_px": {"value": 20, "confidence": 0.95, "origin": "computed-style extraction"},
+    "breakpoints_px": {"value": [768, 1024], "confidence": 0.95, "origin": "computed-style extraction"},
+    "reading_max_px": {"value": 680, "confidence": 0.85, "origin": "independent extraction"},
+    "paper_spectrum_page_gutter": {"value": "clamp(24px, 4vw, 60px)", "confidence": 0.70, "origin": "adapted"}
+  },
+  "spacing": {
+    "base_px": {"value": 4, "confidence": 0.98, "origin": "computed-style extraction"},
+    "scale_px": {"value": [4, 8, 12, 20, 24, 40, 60, 80, 120, 170, 200], "confidence": 0.86, "origin": "merged independent extractions"},
+    "default_section_gap_px": {"value": 80, "confidence": 0.82, "origin": "independent extraction"},
+    "editorial_pause_px": {"value": [120, 170, 200], "confidence": 0.90, "origin": "computed/independent extraction"}
+  },
+  "typography": {
+    "weight_default": {"value": 400, "confidence": 0.98, "origin": "independent extraction"},
+    "scale": {
+      "caption": {"size_px": 13, "line_height": 1.2, "tracking_em": 0.06},
+      "body": {"size_px": 15, "line_height": 1.5, "tracking_em": 0},
+      "lead": {"size_px": 20, "line_height": 1.33, "tracking_em": 0},
+      "heading_sm": {"size_px": 25, "line_height": 1.19, "tracking_em": 0.01},
+      "heading": {"size_px": 32, "line_height": 1.16, "tracking_em": -0.01},
+      "feature": {"size_px": 50, "line_height": 1.04, "tracking_em": -0.01},
+      "display": {"size_px": 60, "line_height": 1.0, "tracking_em": -0.025}
+    },
+    "paper_spectrum_serif": {"value": "Newsreader", "origin": "adapted open-source substitute"},
+    "paper_spectrum_sans": {"value": "Inter", "origin": "adapted open-source substitute"}
+  },
+  "surfaces": {
+    "divider_px": {"value": 1, "confidence": 0.98, "origin": "computed-style extraction"},
+    "card_radius_px": {"value": 0, "confidence": 0.95, "origin": "independent extraction"},
+    "image_radius_px": {"value": 0, "confidence": 0.95, "origin": "independent extraction"},
+    "default_shadow": {"value": "none", "confidence": 0.90, "origin": "behavioral model"}
+  },
+  "motion": {
+    "micro_ms": {"value": 220, "confidence": 0.98, "origin": "computed-style extraction"},
+    "small_ms": {"value": 400, "confidence": 0.98, "origin": "computed-style extraction"},
+    "medium_ms": {"value": 800, "confidence": 0.98, "origin": "computed-style extraction"},
+    "easing": {"value": "cubic-bezier(0.25, 1, 0.5, 1)", "confidence": 1.0, "origin": "computed-style extraction"},
+    "paper_spectrum_reveal_y_px": {"value": 8, "confidence": 0.65, "origin": "adapted restraint rule"},
+    "paper_spectrum_hover_scale": {"value": 1.01, "confidence": 0.65, "origin": "adapted restraint rule"}
+  },
+  "identity": {
+    "paper": "#F7F5F0",
+    "white": "#FFFFFF",
+    "ink": "#151514",
+    "ink_soft": "#3A3A37",
+    "paper_mist": "#ECE9E2",
+    "spectrum_wash": "#D9DEE0"
+  }
+}
