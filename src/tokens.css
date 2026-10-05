@@ -83,3 +83,15 @@
   --ps-radius-control: 0px;
   --ps-radius-inline: 2px;
 }
+
+@media (min-width: 1440px) {
+  :root {
+    --ps-gutter: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --ps-gutter: 24px;
+  }
+}

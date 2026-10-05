@@ -1,0 +1,8 @@
+{
+  "name": "Paper Spectrum",
+  "description": "An editorial web system and design prototype exploring proportion, rhythm, hierarchy, and paper materiality.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
