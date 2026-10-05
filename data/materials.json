@@ -1,0 +1,260 @@
+[
+  {
+    "id": "warm-uncoated",
+    "name": "Warm Uncoated",
+    "family": "uncoated",
+    "summary": "A soft natural-white sheet with visible tooth, designed for editorial print, stationery and tactile packaging.",
+    "visual": {
+      "shade": "Warm natural white",
+      "surface": "Uncoated / fine tooth",
+      "image_set": []
+    },
+    "physical": {
+      "gsm": [120, 160, 250, 300],
+      "caliper_um": null,
+      "bulk_cm3_g": null,
+      "grain": "To be verified",
+      "fiber": "To be verified"
+    },
+    "optical": {
+      "opacity_percent": null,
+      "brightness_percent": null,
+      "whiteness": "Warm"
+    },
+    "print": {
+      "methods": ["Offset", "Digital"],
+      "notes": "Prototype compatibility only. Confirm press, ink and drying behavior with the actual stock."
+    },
+    "finishing": {
+      "compatible": ["Foil", "Emboss", "Deboss", "Die-cut", "Score"],
+      "notes": "Prototype compatibility only. Test pressure, heat and cracking on the real sheet."
+    },
+    "applications": ["Editorial", "Stationery", "Invitations", "Folding cartons"],
+    "availability": {
+      "status": "sample",
+      "minimum_order": null,
+      "sheet_sizes": []
+    },
+    "provenance": {
+      "status": "prototype",
+      "source": "Paper Spectrum concept dataset",
+      "last_verified": null,
+      "notes": "All technical values require supplier or physical verification before publication."
+    }
+  },
+  {
+    "id": "cotton-texture",
+    "name": "Cotton Texture",
+    "family": "textured",
+    "summary": "A tactile sheet intended to foreground fibre, impression and restrained luxury through surface rather than coating.",
+    "visual": {
+      "shade": "Soft ivory",
+      "surface": "Textured / felt-like",
+      "image_set": []
+    },
+    "physical": {
+      "gsm": [120, 220, 300],
+      "caliper_um": null,
+      "bulk_cm3_g": null,
+      "grain": "To be verified",
+      "fiber": "Cotton content to be verified"
+    },
+    "optical": {
+      "opacity_percent": null,
+      "brightness_percent": null,
+      "whiteness": "Soft ivory"
+    },
+    "print": {
+      "methods": ["Letterpress", "Offset", "Digital"],
+      "notes": "Surface depth can alter fine-detail reproduction; verify with a press proof."
+    },
+    "finishing": {
+      "compatible": ["Foil", "Emboss", "Deboss", "Edge treatment"],
+      "notes": "Prototype compatibility only. Relief and foil coverage must be tested on the actual stock."
+    },
+    "applications": ["Invitations", "Luxury stationery", "Presentation pieces", "Premium wraps"],
+    "availability": {
+      "status": "sample",
+      "minimum_order": null,
+      "sheet_sizes": []
+    },
+    "provenance": {
+      "status": "prototype",
+      "source": "Paper Spectrum concept dataset",
+      "last_verified": null,
+      "notes": "All technical values require supplier or physical verification before publication."
+    }
+  },
+  {
+    "id": "recycled-natural",
+    "name": "Recycled Natural",
+    "family": "recycled",
+    "summary": "A visibly honest recycled sheet where fibre variation and subtle inclusions are treated as material evidence.",
+    "visual": {
+      "shade": "Natural grey-beige",
+      "surface": "Uncoated / visible fibre",
+      "image_set": []
+    },
+    "physical": {
+      "gsm": [100, 140, 250, 300],
+      "caliper_um": null,
+      "bulk_cm3_g": null,
+      "grain": "To be verified",
+      "fiber": "Recycled content to be verified"
+    },
+    "optical": {
+      "opacity_percent": null,
+      "brightness_percent": null,
+      "whiteness": "Natural"
+    },
+    "print": {
+      "methods": ["Offset", "Digital", "Screen"],
+      "notes": "Fibre and shade variation may affect solids and fine tonal work; proofing is required."
+    },
+    "finishing": {
+      "compatible": ["Die-cut", "Score", "Foil", "Emboss"],
+      "notes": "Prototype compatibility only; verify cracking and surface pickup."
+    },
+    "applications": ["Brand stationery", "Editorial", "Sustainable packaging", "Tags"],
+    "availability": {
+      "status": "sample",
+      "minimum_order": null,
+      "sheet_sizes": []
+    },
+    "provenance": {
+      "status": "prototype",
+      "source": "Paper Spectrum concept dataset",
+      "last_verified": null,
+      "notes": "All technical values require supplier or physical verification before publication."
+    }
+  },
+  {
+    "id": "smooth-coated",
+    "name": "Smooth Coated",
+    "family": "coated",
+    "summary": "A controlled smooth surface for clean image reproduction, dense colour and precise commercial print.",
+    "visual": {
+      "shade": "Neutral white",
+      "surface": "Smooth coated",
+      "image_set": []
+    },
+    "physical": {
+      "gsm": [115, 150, 200, 250, 300],
+      "caliper_um": null,
+      "bulk_cm3_g": null,
+      "grain": "To be verified",
+      "fiber": "To be verified"
+    },
+    "optical": {
+      "opacity_percent": null,
+      "brightness_percent": null,
+      "whiteness": "Neutral white"
+    },
+    "print": {
+      "methods": ["Offset", "Digital"],
+      "notes": "Prototype compatibility only. Confirm coating, toner/ink adhesion and finishing sequence."
+    },
+    "finishing": {
+      "compatible": ["Spot UV", "Foil", "Lamination", "Die-cut", "Score"],
+      "notes": "Prototype compatibility only; surface treatment can materially affect adhesion."
+    },
+    "applications": ["Brochures", "Editorial imagery", "Folding cartons", "Commercial print"],
+    "availability": {
+      "status": "sample",
+      "minimum_order": null,
+      "sheet_sizes": []
+    },
+    "provenance": {
+      "status": "prototype",
+      "source": "Paper Spectrum concept dataset",
+      "last_verified": null,
+      "notes": "All technical values require supplier or physical verification before publication."
+    }
+  },
+  {
+    "id": "heritage-kraft",
+    "name": "Heritage Kraft",
+    "family": "kraft",
+    "summary": "A brown kraft family positioned around visible fibre, structural honesty and strong contrast with white or metallic print.",
+    "visual": {
+      "shade": "Natural brown",
+      "surface": "Uncoated kraft",
+      "image_set": []
+    },
+    "physical": {
+      "gsm": [120, 200, 300, 400],
+      "caliper_um": null,
+      "bulk_cm3_g": null,
+      "grain": "To be verified",
+      "fiber": "Kraft fibre composition to be verified"
+    },
+    "optical": {
+      "opacity_percent": null,
+      "brightness_percent": null,
+      "whiteness": "Not applicable"
+    },
+    "print": {
+      "methods": ["Offset", "Screen", "Digital"],
+      "notes": "Substrate colour strongly influences ink appearance. White-base strategies may be required."
+    },
+    "finishing": {
+      "compatible": ["Foil", "Die-cut", "Score", "Emboss"],
+      "notes": "Prototype compatibility only. Heavy kraft weights require crease testing."
+    },
+    "applications": ["Packaging", "Tags", "Sleeves", "Stationery"],
+    "availability": {
+      "status": "sample",
+      "minimum_order": null,
+      "sheet_sizes": []
+    },
+    "provenance": {
+      "status": "prototype",
+      "source": "Paper Spectrum concept dataset",
+      "last_verified": null,
+      "notes": "All technical values require supplier or physical verification before publication."
+    }
+  },
+  {
+    "id": "solid-paperboard",
+    "name": "Solid Paperboard",
+    "family": "board",
+    "summary": "A heavier paperboard family for structural applications where fold performance, surface finish and edge quality matter together.",
+    "visual": {
+      "shade": "White / ivory variants",
+      "surface": "Smooth board",
+      "image_set": []
+    },
+    "physical": {
+      "gsm": [250, 300, 350, 400],
+      "caliper_um": null,
+      "bulk_cm3_g": null,
+      "grain": "To be verified",
+      "fiber": "To be verified"
+    },
+    "optical": {
+      "opacity_percent": null,
+      "brightness_percent": null,
+      "whiteness": "Variant dependent"
+    },
+    "print": {
+      "methods": ["Offset", "Digital"],
+      "notes": "Board stiffness, grain direction and coating must be verified against the intended conversion process."
+    },
+    "finishing": {
+      "compatible": ["Foil", "Emboss", "Deboss", "Spot UV", "Die-cut", "Score"],
+      "notes": "Crease matrix, score direction and finish pressure depend on actual caliper and board construction."
+    },
+    "applications": ["Folding cartons", "Sleeves", "Presentation packaging", "Cards"],
+    "availability": {
+      "status": "sample",
+      "minimum_order": null,
+      "sheet_sizes": []
+    },
+    "provenance": {
+      "status": "prototype",
+      "source": "Paper Spectrum concept dataset",
+      "last_verified": null,
+      "notes": "All technical values require supplier or physical verification before publication."
+    }
+  }
+]
