@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Paper Atlas — Paper Spectrum</title>
+  <meta name="description" content="Browse Paper Spectrum by paper family, surface and material character.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/tokens.css">
+  <link rel="stylesheet" href="./src/layout.css">
+  <link rel="stylesheet" href="./src/motion.css">
+  <link rel="stylesheet" href="./src/atlas.css">
+</head>
+<body>
+<header class="ps-shell masthead">
+  <a class="brand" href="./index.html">Paper Spectrum</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="./paper-index.html" aria-current="page">Paper Atlas</a>
+    <a href="./index.html#projects">Studies</a>
+    <a href="./index.html#register">Register</a>
+  </nav>
+</header>
+<main>
+  <section class="ps-shell atlas-intro">
+    <p class="ps-kicker">Paper Atlas / Material Index</p>
+    <h1 class="ps-display atlas-intro__title">Paper, indexed by what it is—not only by what it is called.</h1>
+    <p class="ps-lead atlas-intro__deck">A working atlas of surface, weight, shade, structure, print response and finishing potential. Prototype records are clearly marked until supplier or physical verification is complete.</p>
+  </section>
+  <section class="ps-shell">
+    <div class="atlas-toolbar">
+      <div class="atlas-filters" aria-label="Filter by paper family">
+        <button class="atlas-filter" data-family-filter="all" aria-pressed="true">All</button>
+        <button class="atlas-filter" data-family-filter="uncoated" aria-pressed="false">Uncoated</button>
+        <button class="atlas-filter" data-family-filter="textured" aria-pressed="false">Textured</button>
+        <button class="atlas-filter" data-family-filter="coated" aria-pressed="false">Coated</button>
+        <button class="atlas-filter" data-family-filter="kraft" aria-pressed="false">Kraft</button>
+        <button class="atlas-filter" data-family-filter="recycled" aria-pressed="false">Recycled</button>
+        <button class="atlas-filter" data-family-filter="board" aria-pressed="false">Board</button>
+      </div>
+      <div class="atlas-count" data-material-count aria-live="polite"></div>
+    </div>
+    <div class="material-grid" data-material-grid></div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="ps-shell">
+    <div class="ps-folio">
+      <span>Paper Spectrum · Paper Atlas</span>
+      <span class="ps-credit">Powered by <strong class="ps-credit__brand">ORVIA</strong></span>
+      <span>Material records · v1</span>
+    </div>
+  </div>
+</footer>
+<script src="./src/atlas.js"></script>
+</body>
+</html>
