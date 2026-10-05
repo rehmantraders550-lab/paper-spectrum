@@ -93,5 +93,8 @@
 @media (max-width: 767px) {
   :root {
     --ps-gutter: 24px;
+    --ps-text-display: clamp(36px, 10vw, 42px);
+    --ps-text-feature: clamp(30px, 8vw, 38px);
+    --ps-text-heading: clamp(24px, 6.5vw, 28px);
   }
 }

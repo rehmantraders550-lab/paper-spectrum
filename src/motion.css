@@ -35,7 +35,13 @@
     border-color var(--ps-motion-micro) var(--ps-ease);
 }
 
-.ps-link:hover { opacity: .62; }
+@media (hover: hover) and (pointer: fine) {
+  .ps-link:hover { opacity: .62; }
+}
+
+.ps-link:active {
+  opacity: .75;
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto !important; }
