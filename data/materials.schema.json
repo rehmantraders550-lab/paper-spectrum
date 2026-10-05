@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paperspectrum.local/schema/materials.schema.json",
+  "title": "Paper Spectrum Material",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "family",
+    "summary",
+    "visual",
+    "physical",
+    "optical",
+    "print",
+    "finishing",
+    "applications",
+    "availability",
+    "provenance"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string" },
+    "family": {
+      "type": "string",
+      "enum": ["uncoated", "coated", "textured", "kraft", "recycled", "board", "specialty"]
+    },
+    "summary": { "type": "string" },
+    "visual": {
+      "type": "object",
+      "required": ["shade", "surface", "image_set"],
+      "properties": {
+        "shade": { "type": ["string", "null"] },
+        "surface": { "type": ["string", "null"] },
+        "image_set": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["role", "src", "alt"],
+            "properties": {
+              "role": {
+                "type": "string",
+                "enum": ["hero", "surface", "edge", "stack", "transformation", "application"]
+              },
+              "src": { "type": "string" },
+              "alt": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "physical": {
+      "type": "object",
+      "properties": {
+        "gsm": { "type": "array", "items": { "type": "number" } },
+        "caliper_um": { "type": ["number", "null"] },
+        "bulk_cm3_g": { "type": ["number", "null"] },
+        "grain": { "type": ["string", "null"] },
+        "fiber": { "type": ["string", "null"] }
+      }
+    },
+    "optical": {
+      "type": "object",
+      "properties": {
+        "opacity_percent": { "type": ["number", "null"] },
+        "brightness_percent": { "type": ["number", "null"] },
+        "whiteness": { "type": ["string", "null"] }
+      }
+    },
+    "print": {
+      "type": "object",
+      "required": ["methods", "notes"],
+      "properties": {
+        "methods": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "finishing": {
+      "type": "object",
+      "required": ["compatible", "notes"],
+      "properties": {
+        "compatible": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "applications": { "type": "array", "items": { "type": "string" } },
+    "availability": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "type": "string", "enum": ["sample", "available", "limited", "archive", "unknown"] },
+        "minimum_order": { "type": ["string", "null"] },
+        "sheet_sizes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["status", "source"],
+      "properties": {
+        "status": { "type": "string", "enum": ["verified", "supplier", "measured", "prototype"] },
+        "source": { "type": "string" },
+        "last_verified": { "type": ["string", "null"], "format": "date" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}
