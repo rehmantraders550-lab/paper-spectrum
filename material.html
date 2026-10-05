@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Material — Paper Spectrum</title>
+  <meta name="description" content="Paper Spectrum material record.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/tokens.css">
+  <link rel="stylesheet" href="./src/layout.css">
+  <link rel="stylesheet" href="./src/motion.css">
+  <link rel="stylesheet" href="./src/atlas.css">
+</head>
+<body>
+<header class="ps-shell masthead">
+  <a class="brand" href="./index.html">Paper Spectrum</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="./paper-index.html">Paper Atlas</a>
+    <a href="./index.html#register">Register</a>
+  </nav>
+</header>
+<main class="ps-shell material-detail" data-material-detail>
+  <div class="ps-grid ps-split-5-7 material-detail__hero">
+    <div class="material-detail__plate" aria-hidden="true"><div class="material-detail__sheet"></div></div>
+    <div class="ps-stack--group">
+      <div class="ps-stack">
+        <p class="ps-kicker"><span data-family></span> / Material record</p>
+        <h1 class="ps-display" data-name>Material</h1>
+        <p class="ps-lead" data-summary></p>
+      </div>
+      <a class="ps-link" href="./paper-index.html">Return to Paper Atlas</a>
+    </div>
+  </div>
+
+  <section class="material-detail__specs" aria-label="Material specifications">
+    <div class="spec-row"><span class="spec-row__label">Shade</span><span class="spec-row__value" data-shade></span></div>
+    <div class="spec-row"><span class="spec-row__label">Surface</span><span class="spec-row__value" data-surface></span></div>
+    <div class="spec-row"><span class="spec-row__label">Available weights</span><span class="spec-row__value" data-gsm></span></div>
+    <div class="spec-row"><span class="spec-row__label">Caliper</span><span class="spec-row__value" data-caliper></span></div>
+    <div class="spec-row"><span class="spec-row__label">Fibre</span><span class="spec-row__value" data-fiber></span></div>
+    <div class="spec-row"><span class="spec-row__label">Opacity</span><span class="spec-row__value" data-opacity></span></div>
+    <div class="spec-row"><span class="spec-row__label">Print methods</span><span class="spec-row__value" data-print></span></div>
+    <div class="spec-row"><span class="spec-row__label">Finishing</span><span class="spec-row__value" data-finishing></span></div>
+    <div class="spec-row"><span class="spec-row__label">Applications</span><span class="spec-row__value" data-applications></span></div>
+  </section>
+  <p class="provenance-note" data-provenance></p>
+</main>
+<footer class="footer">
+  <div class="ps-shell">
+    <div class="ps-folio">
+      <span>Paper Spectrum · Material Record</span>
+      <span class="ps-credit">Powered by <strong class="ps-credit__brand">ORVIA</strong></span>
+      <span>Evidence before claims</span>
+    </div>
+  </div>
+</footer>
+<script src="./src/atlas.js"></script>
+</body>
+</html>
